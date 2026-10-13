@@ -24,7 +24,7 @@ Right now, Linux has NOT been confirmed to boot on the device. I'm still trying 
 
 - [x] Boot LK2ND on the MiFi device.
 - [x] Get ADB and Fastboot working.
-- [ ] Figure out how the device currently boots Android.
+- [x] Figure out how the device currently boots Android.
 - [ ] Investigate how LK2ND loads kernels and boot configurations.
 
 ### Phase 2 — Kernel Research
