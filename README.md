@@ -1,30 +1,71 @@
-# Cool hotspot my bro
+# Cool Hotspot My Bro
 
-this is a project made to port linux to Hotspot MiFi devices.
+This is a project made to port Linux to hotspot MiFi devices.
 
-## Whats being used?
+## What's Being Used?
 
 - [LK2ND](https://github.com/msm8916-mainline/lk2nd)
 - ADB and Fastboot
-- a lot of testing and probably more pain than needed.
+- A lot of testing and probably more pain than needed.
 
-## Current status
+## Current Status
 
-so far i managed to boot LK2ND on my MiFi device, which is running Android 4.4.4 with a Qualcomm MSM8916 chipset.
+So far, I've managed to boot LK2ND on my MiFi device, which is running Android 4.4.4 with a Qualcomm MSM8916 chipset.
 
-but now comes the fun part...
+But now comes the fun part...
 
-**getting linux to actually boot.**
+**Getting Linux to actually boot.**
 
-right now linux has NOT been confirmed to boot on the device. im still trying to figure out the boot process and what is needed to get this thing running linux.
+Right now, Linux has NOT been confirmed to boot on the device. I'm still trying to figure out the boot process and what's needed to get this thing running Linux.
 
-## What now?
+## Project Roadmap
 
-- figure out how to boot a linux kernel
-- investigate kernel and device tree support
-- test things and see what works
+### Phase 1 — Research
 
-the project is still in progress, and theres no guarantee this will work yet.
+- [x] Boot LK2ND on the MiFi device.
+- [x] Get ADB and Fastboot working.
+- [ ] Figure out how the device currently boots Android.
+- [ ] Investigate how LK2ND loads kernels and boot configurations.
+
+### Phase 2 — Kernel Research
+
+- [ ] Find a suitable Linux kernel for the Qualcomm MSM8916.
+- [ ] Investigate the device tree and hardware support.
+- [ ] Figure out which drivers are needed for the MiFi's hardware.
+- [ ] Work out how to pass the correct boot arguments to the kernel.
+
+### Phase 3 — First Linux Boot
+
+- [ ] Find a way to load a Linux kernel without breaking the existing Android installation.
+- [ ] Get the kernel to start and collect boot logs.
+- [ ] Troubleshoot any boot errors.
+- [ ] Confirm whether Linux can actually boot on the device.
+
+### Phase 4 — Getting Linux Working
+
+- [ ] Get basic hardware working, such as storage and networking.
+- [ ] Find or build a suitable Linux root filesystem.
+- [ ] Get a usable shell running.
+- [ ] Test which device features work and which need more development.
+
+### Phase 5 — Documentation and Community
+
+- [ ] Document confirmed working methods.
+- [ ] Write guides for other people with compatible MiFi devices.
+- [ ] Collect device information and testing results from the community.
+- [ ] Update the project as more progress is made.
+
+**Note:** These phases are goals, not promises. Some steps may change depending on what the hardware and bootloader support.
+
+## What Now?
+
+The next step is to investigate the boot process, kernel compatibility, and device tree support before attempting a proper Linux boot.
+
+The project is still in progress, and there's no guarantee this will work yet.
+
+## When Will You Be Done?
+
+Soon, VERY SOON.
 
 ## License
 
